@@ -19,6 +19,27 @@ body {
   display: none;
 }
 
+nav {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+}
+nav i {
+  font-size: 1.5em;
+}
+nav h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
 main {
   width: 100%;
   position: relative;
@@ -295,7 +316,7 @@ main {
 
 @media (min-width: 600px) {
   .view-3 {
-    padding: 2rem 8rem;
+    padding: 4rem 8rem;
   }
   .view-3 h2 {
     font-size: 2.5em;
@@ -303,7 +324,6 @@ main {
 }
 .view-4 {
   width: 100%;
-  height: 60vh;
   padding: 2rem 2rem;
   background-color: white;
   display: flex;
@@ -405,5 +425,138 @@ main {
   }
   .view-4 .cards p {
     font-size: 0.9em;
+  }
+}
+.view-5 {
+  width: 100%;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.view-5 h2 {
+  font-size: 1.5em;
+  font-family: 600;
+}
+.view-5 p {
+  font-size: 0.7em;
+}
+.view-5 .details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.view-5 .details input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+}
+.view-5 .details button {
+  padding: 0.6rem 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 0.8em;
+  cursor: pointer;
+  background-color: #30261c;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .view-5 {
+    padding: 4rem 8rem;
+  }
+  .view-5 h2 {
+    font-size: 2.5em;
+  }
+  .view-5 p {
+    font-size: 0.9em;
+  }
+}
+footer {
+  width: 100%;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #30261c;
+  color: white;
+}
+footer h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+footer .footer-part-2 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .footer-part-2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .footer-part-2 div h4 {
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+footer .footer-part-2 div a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.6em;
+  display: block;
+}
+footer .footer-part-3 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+footer .footer-part-3 h4 {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  footer {
+    padding: 4rem 8rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  footer .footer-part-2 {
+    width: 50%;
+  }
+  footer .footer-part-2 div {
+    gap: 1rem;
+  }
+  footer .footer-part-2 div h4 {
+    font-size: 1em;
+  }
+  footer .footer-part-2 div a {
+    font-size: 0.75em;
+  }
+  footer .footer-part-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer .footer-part-3 h4 {
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: initial;
   }
 }

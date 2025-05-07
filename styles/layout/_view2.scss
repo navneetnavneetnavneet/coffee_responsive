@@ -1,0 +1,116 @@
+@import "../components/coffee-card";
+@import "../components/dessert-card";
+
+.view-2 {
+  width: 100%;
+  padding: 2em 2em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .special-coffee {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .coffees {
+      width: 100%;
+      display: flex;
+      gap: 1em;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+  }
+
+  .special-dessert {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .desserts {
+      width: 100%;
+      display: flex;
+      gap: 1em;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .view-2 {
+    padding: 2em 8em;
+    gap: 2rem;
+
+    .special-coffee {
+      gap: 2rem;
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      .coffees {
+        gap: 2rem;
+
+        .coffee {
+          width: 20%;
+          padding: 1rem;
+
+          .image {
+            aspect-ratio: 1/1;
+          }
+
+          h3 {
+            font-size: 1.2em;
+          }
+
+          p {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+
+    .special-dessert {
+      gap: 2rem;
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      .desserts {
+        gap: 2rem;
+
+        .dessert {
+          width: 20%;
+          padding: 1rem;
+
+          .image {
+            aspect-ratio: 1/1;
+          }
+
+          h3 {
+            font-size: 1.2em;
+          }
+
+          p {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}

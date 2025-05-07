@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #e2d9c8;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  width: 100%;
+  position: relative;
+}
+
+.view-1 {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-image: url(https://images.unsplash.com/photo-1575883446992-61cb2d7d301c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+.view-1 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-1 .content h2 {
+  font-size: 1.8em;
+  font-weight: 500;
+}
+.view-1 .content h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.view-1 .content button {
+  padding: 0.8rem 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .view-1 {
+    width: 100%;
+    aspect-ratio: 5/2;
+    padding: 2em 8em;
+    background-position-y: 65%;
+  }
+  .view-1 .content {
+    width: 40%;
+  }
+}
+.coffee {
+  flex-shrink: 0;
+  width: 60%;
+  background-color: #f0ebe3;
+  overflow: hidden;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.coffee .image {
+  aspect-ratio: 1/1.25;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.coffee .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.coffee h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+.coffee p {
+  font-size: 0.75em;
+  opacity: 0.5;
+}
+.coffee .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.coffee .price h2 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.coffee .price button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #30261c;
+  color: white;
+  font-size: 0.6em;
+  cursor: pointer;
+}
+
+.dessert {
+  flex-shrink: 0;
+  width: 60%;
+  background-color: #f0ebe3;
+  overflow: hidden;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.dessert .image {
+  aspect-ratio: 1/1.25;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.dessert .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dessert h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+.dessert p {
+  font-size: 0.75em;
+  opacity: 0.5;
+}
+.dessert .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dessert .price h2 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.dessert .price button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #30261c;
+  color: white;
+  font-size: 0.6em;
+  cursor: pointer;
+}
+
+.view-2 {
+  width: 100%;
+  padding: 2em 2em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-2 .special-coffee {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-2 .special-coffee h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.view-2 .special-coffee .coffees {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.view-2 .special-dessert {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-2 .special-dessert h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.view-2 .special-dessert .desserts {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+@media (min-width: 600px) {
+  .view-2 {
+    padding: 2em 8em;
+    gap: 2rem;
+  }
+  .view-2 .special-coffee {
+    gap: 2rem;
+  }
+  .view-2 .special-coffee h1 {
+    font-size: 2.5em;
+  }
+  .view-2 .special-coffee .coffees {
+    gap: 2rem;
+  }
+  .view-2 .special-coffee .coffees .coffee {
+    width: 20%;
+    padding: 1rem;
+  }
+  .view-2 .special-coffee .coffees .coffee .image {
+    aspect-ratio: 1/1;
+  }
+  .view-2 .special-coffee .coffees .coffee h3 {
+    font-size: 1.2em;
+  }
+  .view-2 .special-coffee .coffees .coffee p {
+    font-size: 0.9em;
+  }
+  .view-2 .special-dessert {
+    gap: 2rem;
+  }
+  .view-2 .special-dessert h1 {
+    font-size: 2.5em;
+  }
+  .view-2 .special-dessert .desserts {
+    gap: 2rem;
+  }
+  .view-2 .special-dessert .desserts .dessert {
+    width: 20%;
+    padding: 1rem;
+  }
+  .view-2 .special-dessert .desserts .dessert .image {
+    aspect-ratio: 1/1;
+  }
+  .view-2 .special-dessert .desserts .dessert h3 {
+    font-size: 1.2em;
+  }
+  .view-2 .special-dessert .desserts .dessert p {
+    font-size: 0.9em;
+  }
+}
